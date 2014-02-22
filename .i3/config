@@ -13,11 +13,17 @@ set $mod Mod1
 
 #set $blue #03adf0
 #set $blue #a348b1
-set $blue #5f5f5f
-#set $gray1 #2d2d2d
+#set $blue #5f5f5f
+#set $blue #df253f
+#set $blue #00a2ff
+set $blue #525252
+set $gray1 #2d2d2d
 #set $gray1 #333333
-set $gray1 #3f3f3f
-set $white #f7f7f7
+#set $gray1 #3f3f3f
+#set $gray1 #fafafa
+#set $white #f7f7f7
+#set $white #fafafa
+set $white #f9f9f9
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -28,7 +34,8 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
 #font pango:Terminus 11
-font pango:Roboto Medium 11
+font pango:Roboto Medium 9
+#font pango:Droid Sans Bold 9
 
 ## Colours
 ##---------
@@ -200,6 +207,7 @@ bar {
         }
 }
 
+for_window [window_role="pop-up"] floating enable
 for_window [class="Xfce4-notifyd"] floating enable; border none
 for_window [class="Gnome-screenshot"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
@@ -210,7 +218,7 @@ for_window [class="angband"] floating enable
 
 #exec xcompmgr -c -C
 #exec --no-startup-id xset dpms 600
-exec xautolock -time 5 -locker "i3lock -c 9dcd9d -i '/home/colin/Dropbox/Photos/Wallpapers/Desktop/Nexus 5/09 - EpXVd3E.png'"
+exec xautolock -time 10 -locker "i3lock -c 9dcd9d -i '/home/colin/Dropbox/Photos/Wallpapers/Desktop/Nexus 5/09 - EpXVd3E.png'"
 exec $HOME/.xdg-running
 exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 exec xfsettingsd

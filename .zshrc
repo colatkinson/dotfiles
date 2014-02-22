@@ -45,10 +45,11 @@ plugins=(git command-not-found git systemd themes archlinux)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk
 export PATH="$HOME/.cask/bin:$PATH"
 
 export EDITOR=vim
+#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 alias colorcrunch=$HOME/Dropbox/colorcrunch
 alias colorblocks=$HOME/Dropbox/colorblocks
 
