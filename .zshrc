@@ -45,7 +45,7 @@ plugins=(git command-not-found git systemd themes archlinux)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk:/home/colin/.gem/ruby/2.1.0/bin
 export PATH="$HOME/.cask/bin:$PATH"
 
 export EDITOR=vim
@@ -54,7 +54,12 @@ alias colorcrunch=$HOME/Dropbox/colorcrunch
 alias colorblocks=$HOME/Dropbox/colorblocks
 
 export CPPFLAGS="-D_FORTIFY_SOURCE=2"
-export CFLAGS="-march=native -O2 -pipe -fstack-protector --param=ssp-buffer-size=4"
-export CXXFLAGS="-march=native -O2 -pipe -fstack-protector --param=ssp-buffer-size=4"
+export CFLAGS="-march=native -O2 -pipe -fstack-protector --param=ssp-buffer-size=4 -s"
+export CXXFLAGS="$CFLAGS"
 export LDFLAGS="-Wl,-O1,--sort-common,--as-needed,-z,relro"
 export MAKEFLAGS="-j2"
+
+export DEVKITPRO=$HOME/devkitPro
+export DEVKITARM=$DEVKITPRO/devkitARM
+#export QT_STYLE_OVERRIDE=gtk
+export PYTHONPATH=$PYTHONPATH:/home/colin/Downloads/arac/src/python
