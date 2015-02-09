@@ -48,6 +48,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk:/home/colin/.gem/ruby/2.1.0/bin
 export PATH="$HOME/.cask/bin:$PATH"
 
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin
+
 export EDITOR=vim
 #export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 alias colorcrunch=$HOME/Dropbox/colorcrunch
