@@ -237,11 +237,13 @@ for_window [class="chromium_app_list"] floating enable; floating_maximum_size 64
 #bindsym $mod+Shift+s exec "zenity --question --text 'Switch user?' --title 'New login' && gdmflexiserver --new"
 
 exec compton -CGb
+#exec compton -m 0.92 -i 0.86 -e 0.8 -b
 #exec xcompmgr -c -C
 #exec --no-startup-id xset dpms 600
 #exec xautolock -time 10 -locker "i3lock -c 9dcd9d -i '/home/colin/Dropbox/Photos/Wallpapers/Desktop/Nexus 5/09 - EpXVd3E.png'"
-exec xautolock -time 10 -locker "xscreensaver-command -lock"
-exec xscreensaver -no-splash
+exec xautolock -time 10 -locker "/home/colin/dotfiles/lockblur.sh"
+#exec xautolock -time 10 -locker "xscreensaver-command -lock"
+#exec xscreensaver -no-splash
 exec $HOME/.xdg-running
 exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 exec xfsettingsd
@@ -258,3 +260,4 @@ exec thunar-volman
 #exec python2 ~/.linconnect/LinConnectServer/main/linconnect_server.py
 exec nm-applet
 #exec blueman-applet
+exec killall dropbox & sleep 3s && dropbox start -i
