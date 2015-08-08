@@ -11,10 +11,10 @@
 
 set $mod Mod1
 
-set $blue  #525252
-set $gray1 #2d2d2d
-set $white #f9f9f9
-set $red   #d64937
+set $bg_f  #525252
+set $bg_uf #2d2d2d
+set $fg_br #f9f9f9
+set $atn   #d64937
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -29,10 +29,10 @@ font pango:Droid Sans 11
 ## Colours
 ##---------
 #colourclass               border    bckgrnd    text
-client.focused             $blue     $blue      $white
-client.focused_inactive    $gray1    $gray1     $white
-client.unfocused           $gray1    $gray1     $white
-client.urgent              $red      $red       $red
+client.focused             $bg_f     $bg_f      $fg_br
+client.focused_inactive    $bg_uf    $bg_uf     $fg_br
+client.unfocused           $bg_uf    $bg_uf     $fg_br
+client.urgent              $atn      $atn       $atn
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -184,12 +184,11 @@ bindsym $mod+Shift+t [class="^.*"] border toggle
 bar {
         status_command i3status
         colors {
-            statusline $white
-            #background #2d2d2d
-            background $gray1
-            focused_workspace  $blue  $blue  $white
-            inactive_workspace $gray1 $gray1 $white
-            urgent_workspace   $red   $red   $white
+            statusline $fg_br
+            background $bg_uf
+            focused_workspace  $bg_f  $bg_f  $fg_br
+            inactive_workspace $bg_uf $bg_uf $fg_br
+            urgent_workspace   $atn   $atn   $fg_br
         }
 }
 
