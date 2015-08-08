@@ -7,8 +7,6 @@ set cindent
 
 syntax on
 
-" colorscheme evening
-" colorscheme solarized
 colorscheme ron
 
 set number
