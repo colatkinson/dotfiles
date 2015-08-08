@@ -7,5 +7,10 @@ set cindent
 
 syntax on
 
-colorscheme evening
+" colorscheme evening
 " colorscheme solarized
+colorscheme ron
+
+set number
+
+execute pathogen#infect()

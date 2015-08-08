@@ -45,7 +45,8 @@ plugins=(git command-not-found git systemd themes archlinux)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk:/home/colin/.gem/ruby/2.1.0/bin
+#export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk:/home/colin/.gem/ruby/2.1.0/bin
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk
 export PATH="$HOME/.cask/bin:$PATH"
 
 export GOPATH=~/go
